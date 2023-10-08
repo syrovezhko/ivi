@@ -1,0 +1,46 @@
+@import './../variables.scss';
+
+.promo {
+  background: $primary-color;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 25vw;
+  margin-top: 7.1vw;
+  margin-bottom: $l-spacer;
+  position: relative;
+  padding: $xl-spacer $l-spacer $l-spacer;
+  width: 50vw;
+  &:before {
+    border-bottom: 7vw solid $primary-color;
+    border-left: 43.1vw solid $primary-color;
+    border-top: 0vw solid transparent;
+    border-right: 7vw solid transparent;
+    content: '';
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: -6.9vw;
+    width: 0;
+  }
+  &__title {
+    color: $secondary-color;
+    font-size: $l-text;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    &__item{
+      background-color: $secondary-color;
+      color: $primary-color;
+      padding: $s-spacer $m-spacer;
+    }
+  }
+}
