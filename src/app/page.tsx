@@ -1,4 +1,5 @@
 import List from "@/UI/list/List";
+import styles from "./page.module.scss";
 import Promo from "@/UI/promo/Promo";
 const listArr = [
   "Lorem ipsum dolor sit amet consectetur adipisicing elit",
