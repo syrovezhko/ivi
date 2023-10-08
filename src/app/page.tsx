@@ -20,5 +20,5 @@ export default function Home() {
       <Promo promo={promo} />
       <List arr={listArr} />
     </main>
-  )
+  );
 }
