@@ -1,3 +1,4 @@
+import List from "@/UI/list/List";
 import Promo from "@/UI/promo/Promo";
 const listArr = [
   "Lorem ipsum dolor sit amet consectetur adipisicing elit",
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Promo promo={promo} />
+      <List arr={listArr} />
     </main>
   )
 }
