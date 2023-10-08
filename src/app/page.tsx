@@ -1,3 +1,4 @@
+import Promo from "@/UI/promo/Promo";
 const listArr = [
   "Lorem ipsum dolor sit amet consectetur adipisicing elit",
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatem fugiat reprehenderit quae, dicta, consectetur eos qui quod sed esse perferendis doloribus iure quos inventore. Accusantium non tenetur aspernatur impedit?",
@@ -14,6 +15,7 @@ const promo = {
 export default function Home() {
   return (
     <main className={styles.main}>
+      <Promo promo={promo} />
     </main>
   )
 }
